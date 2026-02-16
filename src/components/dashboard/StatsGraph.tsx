@@ -1,4 +1,5 @@
-// React import removed
+'use client';
+
 import {
     LineChart,
     Line,

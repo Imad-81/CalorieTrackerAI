@@ -1,8 +1,10 @@
+'use client';
+
 import { useState } from 'react';
-import { useStore } from '../../store/useStore';
-import { Button } from '../ui/Button';
-import { Input } from '../ui/Input';
-import { Card } from '../ui/Card';
+import { useStore } from '@/store/useStore';
+import { Button } from '@/components/ui/Button';
+import { Input } from '@/components/ui/Input';
+import { Card } from '@/components/ui/Card';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export const OnboardingModal = () => {

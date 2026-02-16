@@ -1,8 +1,9 @@
+'use client';
 
-import { useStore } from '../store/useStore';
-import { ProgressRing } from '../components/dashboard/ProgressRing';
-import { MacroHud } from '../components/dashboard/MacroHud';
-import { AICapture } from '../components/dashboard/AICapture';
+import { useStore } from '@/store/useStore';
+import { ProgressRing } from '@/components/dashboard/ProgressRing';
+import { MacroHud } from '@/components/dashboard/MacroHud';
+import { AICapture } from '@/components/dashboard/AICapture';
 import { motion } from 'framer-motion';
 
 export const Dashboard = () => {

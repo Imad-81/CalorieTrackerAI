@@ -1,7 +1,9 @@
+'use client';
+
 import { useState, useRef } from 'react';
 import { Send, Zap, Camera, Loader2 } from 'lucide-react';
-import { Input } from '../ui/Input';
-import { Button } from '../ui/Button';
+import { Input } from '@/components/ui/Input';
+import { Button } from '@/components/ui/Button';
 
 interface AICaptureProps {
     onLog: (text: string) => void;

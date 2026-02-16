@@ -1,7 +1,9 @@
+'use client';
+
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Card } from '../ui/Card'; // Assuming Card exists in valid path
-import { cn } from '../../lib/utils';
+import { Card } from '@/components/ui/Card';
+import { cn } from '@/lib/utils';
 
 interface MacroHudProps {
     protein: { current: number; total: number };

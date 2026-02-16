@@ -1,6 +1,7 @@
+'use client';
 
-import { StatsGraph } from '../components/dashboard/StatsGraph';
-import { Card } from '../components/ui/Card';
+import { StatsGraph } from '@/components/dashboard/StatsGraph';
+import { Card } from '@/components/ui/Card';
 import { ArrowDownRight } from 'lucide-react';
 
 export const Stats = () => {

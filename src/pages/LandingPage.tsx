@@ -1,10 +1,11 @@
+'use client';
 
 import { motion } from 'framer-motion';
 import { ChevronRight } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
+import { useRouter } from 'next/navigation';
 
 export const LandingPage = () => {
-    const navigate = useNavigate();
+    const router = useRouter();
 
     return (
         <div className="relative min-h-screen flex flex-col items-center justify-center p-6 overflow-hidden">
@@ -17,7 +18,7 @@ export const LandingPage = () => {
             <nav className="absolute top-0 w-full p-6 flex justify-between items-center z-20 max-w-7xl mx-auto">
                 <div className="text-2xl font-black tracking-tighter italic">CUT.</div>
                 <button
-                    onClick={() => navigate('/login')}
+                    onClick={() => router.push('/login')}
                     className="text-sm font-bold tracking-widest uppercase hover:text-electric-lime transition-colors"
                 >
                     Login
@@ -53,7 +54,7 @@ export const LandingPage = () => {
                     transition={{ delay: 0.4, duration: 0.6, ease: "backOut" }}
                 >
                     <button
-                        onClick={() => navigate('/dashboard')}
+                        onClick={() => router.push('/dashboard')}
                         className="group relative px-10 py-5 bg-electric-lime text-obsidian font-black text-xl uppercase tracking-widest rounded-full hover:bg-electric-lime/90 transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] shadow-[0_0_50px_-15px_rgba(204,255,0,0.5)]"
                     >
                         <span className="relative z-10 flex items-center gap-3">
