@@ -1,73 +1,63 @@
-# React + TypeScript + Vite
+# CUT.
+### Bold. Fast. Lean.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**CUT** is a high-performance calorie tracker designed for precision and speed. It leverages AI to simplify food logging and provides a streamlined, high-contrast interface for elite nutrition management.
 
-Currently, two official plugins are available:
+## ⚡ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **🤖 AI-Powered Capture**: Log meals in natural language. No more searching through tedious databases.
+- **🎯 Macro HUD**: Real-time tracking of Protein, Carbs, and Fats with high-visibility indicators.
+- **⭕ Progress Ring**: Instant visual feedback on your daily calorie intake relative to your TDEE.
+- **📊 Analytics**: Track your progress over time with clean, data-driven visualizations.
+- **⚡ Performance First**: Built with Next.js and Framer Motion for a fluid, "anti-gravity" user experience.
 
-## React Compiler
+## 🎨 Aesthetic: "The Obsidian Edge"
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+CUT follows a strict design philosophy:
+- **Obsidian (#050505)**: Deep, focused backgrounds.
+- **Electric Lime (#ccff00)**: High-energy accents for critical data.
+- **Crisp White (#ffffff)**: Editorial-grade typography.
 
-## Expanding the ESLint configuration
+## 🛠 Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Framework**: [Next.js 15+](https://nextjs.org/) (App Router)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
+- **State Management**: [Zustand](https://github.com/pmndrs/zustand)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Charts**: [Recharts](https://recharts.org/)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 Getting Started
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Prerequisites
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- [Bun](https://bun.sh/) (Recommended) or Node.js
+
+### Installation
+
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   bun install
+   ```
+
+### Development
+
+Run the development server:
+```bash
+bun run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🏗 Project Structure
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- `src/app`: Next.js App Router pages and layouts.
+- `src/components`: Reusable UI elements (dashboard, onboarding, ui).
+- `src/pages`: Feature page implementations (Landing, Dashboard, Stats).
+- `src/store`: Global state management via Zustand.
+- `src/styles`: Global CSS and theme configurations.
+
+---
+*Built for those who demand more from their tools.*
